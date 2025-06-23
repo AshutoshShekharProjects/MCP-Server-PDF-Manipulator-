@@ -1,0 +1,23 @@
+[project]
+name = "pdf-manipulator"
+version = "0.1.0"
+description = "Provides various tools for pdf manipulation"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [ "mcp>=1.9.4",
+    "mcp",
+    "PyPDF2>=3.0.0",
+    "reportlab>=4.0.0",
+    "pdf2image>=1.16.0",
+    "Pillow>=10.0.0",
+    "pdfplumber>=0.9.0"
+]
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+pdf-manipulator = "pdf_manipulator:main"
+
+
